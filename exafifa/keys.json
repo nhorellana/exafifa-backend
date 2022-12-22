@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "avian-infusion-296403",
+  "private_key_id": "6d7fc151617b0c3de3559e0a4ad4f10801c485b1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCoVaAUSimRKX2+\npW0pIxuuDhGFOKndULKn5On3JNvhwSLxKrwV1GcoyK6kv76MeDrUkMOqjykIKwUw\nIPTnfqSdpLcUwwmy9QPKifWCA/4LyHGxTuoGRriQnLEBFdppAN9TNnzk4ZuuUALt\nUV3MgDt9duAsowsLhpfek4j6AJcLLvVkdihakVAdWgK0x1A7IoMD0CiObmMKiuAN\nEbKpQrpBpp3Pt9Kc7jbwZy97HTgS9fL4ld+uDIgre1Kg6Mn+zutCaJENa0QP9QtI\nEbHwWkKI/e0Zn7Kry8TLOljIoCZL9j6RH1TjGlB2Y0oEI7OArGj8fUs86mG3E6ib\n69bupY2lAgMBAAECggEABYzLKhgW3kEcsvovyu0sJrUyiS6o1RHpzgTLXPljYYJV\nZVeoG10lKJBTR73Fqcp2ABekx90P+IO4mFFh2bcQdN0fJylWCscuwJEDXe3FRLyv\nWO31486Vm7j60gMXMCKV+l+fxwkUMa9UJWBrJAivTW/rrLUUcmUV4UICgGGgGT99\npRwUtZUv9VBivI+R891YXXn4ev7XOAa2zFFspgPEWji32uu/VvLLll7rgWtDUy6b\n5m5FR5y3xXdczyobn7GYSTQ70FfqPWxDWzoa3Yg7NMw07NrLwX3qF/PLKspI0m9u\nuqSjlauy6jpbkCO56zHdHmihFCeBtGrYCzK1HKajyQKBgQDaxAb1HBN9u8z6xa1h\nl4MwWi3Vy4GDsYna5Kt/a8VTQHbyM/FiDT/JPxVBywv1sXeuSLmfuYxOHE6U4fRQ\nqAzG1FV1AjP9uX6eXGTBW3WIB74GtZJEBHeTd+gJs8VO6uObEikupO3XyzAxmk1E\nZptcGhEbStv/XbKPSFiyPN1nqQKBgQDE/DpDIVu5nn8TBJklS2kIdSsFjD1SpFV8\nV52fNb1WLqS/HHWEtXWsb7ZaSpbfdW9UlnxoA6qRDyEZB4/SqiuPWZr4q0+cqu/F\nwA0DlLvihGZKM2QsmRdnVlsmpCEdX4/KYI7ejpYVc94zkx9R/tAeAHT0wxly6lSi\nQHDHHTYDnQKBgQDJOkVYEzJOln/PMCPywAZ5ZIoCvYXtmFJA2dRyibRhhsuisGrZ\nkWxZ9j/cXCQtJMf8tYKhTHClrN4PjuRHiLzv64KL9bHTMlwo2L4JKdKrhMujqkLX\nc/B14na67fSRSfiAvKzK7gSlWY6EIfXu9B72EjgoDazdcdd8esSzds8FuQKBgHOs\nvjXvn+KXnX24hIovB2XNEE94tAYUtJKJDOmScDXsvBfyCVy+BnUVQNsy0/gzCQZ+\nPF4EUSRP4xrEowONpHjQoL2IM/8HLjhM+BdzPwXcxAistxWtbN3lCy/c0AlktZad\nLyioSKAeY4ybx5ep7+K+V+/npckirEJ/Xvq+P5rNAoGABEwLO4RAnXTquDFAh6px\n5RWZPTkRgrjJSxD20CSeePkAWWHLNhQJvIkuJV+mI/+aatIDiqWs0+xTGHdu669z\n64IYNB+1fv5oleFw7nNz//vqrAoYZdMWfMxb1F1ssLo7+BL0HhzsBqVl2IJieIwN\nQykLj7GLFUBUysjlg8JtnD0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "exafifa-account@avian-infusion-296403.iam.gserviceaccount.com",
+  "client_id": "106866867651026803827",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/exafifa-account%40avian-infusion-296403.iam.gserviceaccount.com"
+}
