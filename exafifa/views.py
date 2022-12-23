@@ -22,7 +22,7 @@ class ExafifaViewSet(viewsets.GenericViewSet):
 
         past_results = spreadsheets_operations("read", "Resultados!A1:G1000")
         result = request.data.get("result")
-        parsed_results = result.split(",")
+        parsed_results = [x.strip() for x in result.split(',')]
         past_results.append(parsed_results)
         spreadsheets_operations("write", f"Resultados!A1", past_results)
         table = update_positions(past_results)
