@@ -1,4 +1,4 @@
-# fly.toml file generated for exafifa on 2022-12-22T21:50:52-03:00
+# fly.toml file generated for exafifa on 2022-12-22T23:05:23-03:00
 
 app = "exafifa"
 kill_signal = "SIGINT"

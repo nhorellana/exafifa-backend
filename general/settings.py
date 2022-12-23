@@ -28,6 +28,7 @@ SECRET_KEY = 'django-insecure-aa-@pulmn3x-_$1)rx5%f1)$fev$sf(wh3hzs0%4agk2_d=o^m
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'https://exafifa.fly.dev/',
     'exafifa.fly.dev',
     '0.0.0.0',
     '127.0.0.1',

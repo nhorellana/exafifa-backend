@@ -22,7 +22,7 @@ def update_positions(results):
             result_2 = "w"
         ligue[player_1].append(result_1)
         ligue[player_2].append(result_2)
-    table = [["Position", "Name", "Wins", "Ties", "Loses", "Points"]]
+    table = [["Position", "Name", "Wins", "Ties", "Loses", "Played" "Points"]]
     positions = calculate_points(ligue)
     print(f"Posiciones {positions}")
     table.extend(positions)
@@ -37,7 +37,8 @@ def calculate_points(ligue):
         loses = results.count("l")
         points += (3 * wins)
         points += ties
-        table.append([player, wins, ties, loses, points])
+        played = (wins + ties + loses)
+        table.append([player, wins, ties, loses, played, points])
     sorted_positions = sorted(table, key=lambda x:x[-1], reverse=True)
     for i, inner_list in enumerate(sorted_positions):
         inner_list.insert(0, i+1)

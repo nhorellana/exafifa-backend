@@ -31,11 +31,3 @@ class ExafifaViewSet(viewsets.GenericViewSet):
             {"msg": "Éxito!", "new_value": past_results},
             status=status.HTTP_200_OK,
         )
-    @action(detail=False, methods=["POST"])
-    def write_table(self, request, *args, **kwargs):
-        results = [["Nicolas","Antonio","11","2"],["Nicolas","Antonio","2","2"],["Nicolas","Antonio","4","2"],["Nicolas","Antonio","5","2"],["Nicolas","Antonio","5","5"],["Nicolas","Antonio","3","5"]]
-        table = update_positions(results)
-
-        return Response(
-            {"msg": "Éxito!", "ligue": f"Resultados!{table}"}, status=status.HTTP_200_OK,
-        )
