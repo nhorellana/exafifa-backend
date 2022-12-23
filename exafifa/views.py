@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from rest_framework.views import Response, status
 
 from exafifa.spreadsheet import spreadsheets_operations
+from exafifa.utils import update_positions
 
 
 class ExafifaViewSet(viewsets.GenericViewSet):
@@ -20,15 +21,21 @@ class ExafifaViewSet(viewsets.GenericViewSet):
         """Modifies the value of a cell in the spreadsheet's Resultados page."""
 
         past_results = spreadsheets_operations("read", "Resultados!A1:G1000")
-        cell_position = request.data.get("cell_position")
         result = request.data.get("result")
         parsed_results = result.split(",")
         past_results.append(parsed_results)
-        print(f"Resultados totales: {past_results}")
-
-        spreadsheets_operations("write", f"Resultados!{cell_position}", past_results)
+        spreadsheets_operations("write", f"Resultados!A1", past_results)
+        table = update_positions(past_results)
+        spreadsheets_operations("write", f"Liga!A1", table)
         return Response(
-            {"msg": "Éxito!", "modified_cell": f"Resultados!{cell_position}", "new_value": past_results},
+            {"msg": "Éxito!", "new_value": past_results},
             status=status.HTTP_200_OK,
         )
+    @action(detail=False, methods=["POST"])
+    def write_table(self, request, *args, **kwargs):
+        results = [["Nicolas","Antonio","11","2"],["Nicolas","Antonio","2","2"],["Nicolas","Antonio","4","2"],["Nicolas","Antonio","5","2"],["Nicolas","Antonio","5","5"],["Nicolas","Antonio","3","5"]]
+        table = update_positions(results)
 
+        return Response(
+            {"msg": "Éxito!", "ligue": f"Resultados!{table}"}, status=status.HTTP_200_OK,
+        )
