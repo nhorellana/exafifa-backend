@@ -22,7 +22,7 @@ def update_positions(results):
             result_2 = "w"
         ligue[player_1].append(result_1)
         ligue[player_2].append(result_2)
-    table = [["Position", "Name", "Wins", "Ties", "Loses", "Played" "Points"]]
+    table = [["Position", "Name", "Wins", "Ties", "Loses", "Played", "Points"]]
     positions = calculate_points(ligue)
     print(f"Posiciones {positions}")
     table.extend(positions)
