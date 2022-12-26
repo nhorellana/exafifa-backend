@@ -39,7 +39,8 @@ def spreadsheets_operations(operation, position, data=[[]]):
 
         elif operation == "delete":
             sheet.values().clear(
-                spreadsheetId=SPREADSHEET_ID, range=position,
+                spreadsheetId=SPREADSHEET_ID,
+                range=position,
             ).execute()
             return "Deleted!"
 
