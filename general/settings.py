@@ -142,6 +142,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:8000',
-    'https://api.examedi.com/',
-    'https://api-dev.examedi.com/',
+    'https://api.examedi.com',
+    'https://api-dev.examedi.com',
 ]
