@@ -9,7 +9,7 @@ def update_positions(results):
     # TODO: add goal difference
     ligue = defaultdict(list)
     for game in results:
-        result_1, result_2 = ("","") # w, l, t
+        result_1, result_2 = ("", "")  # w, l, t
         player_1, player_2, goals_1, goals_2 = game
         if goals_1 == goals_2:
             result_1 = "t"
@@ -28,6 +28,7 @@ def update_positions(results):
     table.extend(positions)
     return table
 
+
 def calculate_points(ligue):
     table = []
     for player, results in ligue.items():
@@ -35,11 +36,11 @@ def calculate_points(ligue):
         wins = results.count("w")
         ties = results.count("t")
         loses = results.count("l")
-        points += (3 * wins)
+        points += 3 * wins
         points += ties
-        played = (wins + ties + loses)
+        played = wins + ties + loses
         table.append([player, wins, ties, loses, played, points])
-    sorted_positions = sorted(table, key=lambda x:x[-1], reverse=True)
+    sorted_positions = sorted(table, key=lambda x: x[-1], reverse=True)
     for i, inner_list in enumerate(sorted_positions):
-        inner_list.insert(0, i+1)
+        inner_list.insert(0, i + 1)
     return sorted_positions
